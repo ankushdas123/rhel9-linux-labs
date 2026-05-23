@@ -4,4 +4,4 @@ This repository contains my daily hands-on practical labs, configurations, and t
 
 ## 📁 Labs Included:
 * **Lab 1:** User Group and Permission Management (Done)
-* **Lab 2:** Coming Soon...
+* **Lab 2:** * **Lab 2:** Storage Setup and System Disk Logging (Done)
