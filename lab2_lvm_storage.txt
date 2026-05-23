@@ -8,3 +8,7 @@ tmpfs                  178M  100K  178M   1% /run/user/1000
 Lab 2: Storage and Disk Partition Management
 Status: Cleanup completed. System disk structure logged.
 Date: Sat May 23 09:42:39 AM IST 2026
+
+=== System User Audit Report ===
+Remaining Active Users on System:
+ankush
