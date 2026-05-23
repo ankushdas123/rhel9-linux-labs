@@ -1,0 +1,10 @@
+Filesystem             Size  Used Avail Use% Mounted on
+devtmpfs               858M     0  858M   0% /dev
+tmpfs                  888M     0  888M   0% /dev/shm
+tmpfs                  356M  5.6M  350M   2% /run
+/dev/mapper/rhel-root   17G  4.0G   14G  24% /
+/dev/sda1             1014M  261M  754M  26% /boot
+tmpfs                  178M  100K  178M   1% /run/user/1000
+Lab 2: Storage and Disk Partition Management
+Status: Cleanup completed. System disk structure logged.
+Date: Sat May 23 09:42:39 AM IST 2026
