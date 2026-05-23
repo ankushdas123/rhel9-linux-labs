@@ -1,1 +1,2 @@
 Hello i am dev.
+Lab 1 Details: Added users to dev group and modified file permissions.
