@@ -1,0 +1,23 @@
+name = input("What is your name?")
+age = input("What is your age?")
+print("Hello " + name + ", you are " + age + " years old.")
+num1 = input("Enter first number:")
+num2 = input("Enter second number:")
+sum_result = int(num1) + int(num2)
+print("The sum of " + num1 + " and " + num2 + " is " + str(sum_result) + ".")
+number = input("Enter a number to check if it is even or odd:")
+if int(number) % 2 == 0:
+    print(number + " is an even number.")
+else:
+    print(number + " is an odd number.")
+while True:
+    val = input("Enter a number to check if it is positive or negative (or 'exit' to quit):")
+    if val == 'exit':
+        print("Exiting the program.")
+        print("goodbye!")
+        break
+    if int(val) >= 0:
+        print(val + " is a positive number.")
+    else:
+        print(val + " is a negative number.")
+

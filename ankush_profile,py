@@ -1,0 +1,19 @@
+ankush_profile = {
+    "name": "Ankush",
+    "age": 25,
+    "role": "Aspiring AWS Cloud Engineer",
+    "skills": ["Linux", "Networking", "Python", "AWS", "Docker"],
+    "goals": ["Become a Cloud Engineer", "Success by 2030"]
+}
+print("--- MY PROFILE ---")
+print("Name:", ankush_profile["name"])
+print("Age:", ankush_profile["age"])
+print("Current Role:", ankush_profile["role"])
+print("\n--- skills ---")
+for skill in ankush_profile["skills"]:
+    print(f"- {skill}")
+print("\n--- Goals ---")
+for goal in ankush_profile["goals"]:
+    print(f"-> {goal}")
+print("\n-------------------------")
+
