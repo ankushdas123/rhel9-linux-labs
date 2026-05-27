@@ -1,0 +1,3 @@
+Hello i am dev.
+Lab 1 Details: Added users to dev group and modified file permissions.
+Lab 1 Details: Added users to dev group, modified file permissions, and successfully cleaned up stale users (ayush, honey, raju, ronti, testuser, karan, pattu, lattu) to secure the system.
