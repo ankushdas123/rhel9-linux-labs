@@ -1,3 +1,6 @@
+import os 
+import time
+import psutil
 ankush_profile = {
     "name": "Ankush",
     "age": 25,
@@ -16,4 +19,40 @@ print("\n--- Goals ---")
 for goal in ankush_profile["goals"]:
     print(f"-> {goal}")
 print("\n-------------------------")
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
+def check_system_health():
+    cpu_usage = psutil.cpu_percent(interval=1)
+    memory_usage = psutil.virtual_memory().percent
+    disk_usage = psutil.disk_usage('/').percent
+
+    clear_screen()
+    print("=" * 45)
+    print("    💻 LIVE DEVOPS SYSTEM HEALTH MONITOR 💻    ")
+    print("=" * 45)
+    
+    print(f"🔥 CPU Usage  : {cpu_usage}%")
+    if cpu_usage > 80:
+        print("   ⚠️ WARNING: High CPU Usage detected!")
+        
+    print(f"🧠 RAM Usage  : {memory_usage}%")
+    if memory_usage > 85:
+        print("   ⚠️ WARNING: Critically High RAM Usage!")
+        
+    print(f"💽 Disk Usage : {disk_usage}%")
+    if disk_usage > 90:
+        print("   ⚠️ WARNING: Low Disk Space left!")
+        
+    print("=" * 45)
+    print("Press Ctrl+C to stop monitoring...")
+
+print("\n[!] Starting System Monitor in 3 seconds...")
+time.sleep(3)
+
+try:
+    while True:
+        check_system_health()
+        time.sleep(2)
+except KeyboardInterrupt:
+    print("\n\n🛑 Monitoring stopped. Great job today, Ankush! 🚀")
