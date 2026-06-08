@@ -1,6 +1,14 @@
 import os 
 import time
-import psutil
+
+try:
+    import psutil
+except ImportError:
+    psutil = None
+    print("Warning: psutil module not found. System monitoring is disabled.")
+    print("Install it using: pip install psutil")
+    exit()
+
 ankush_profile = {
     "name": "Ankush",
     "age": 25,
